@@ -1,0 +1,797 @@
+* {
+  margin: 0;
+  padding: 0;
+  background-color: #f6f9fe;
+  font-family: "HK Grotesk", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f6f9fe;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 8vh;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  margin-bottom: 2rem;
+}
+.logo {
+  margin-left: 5rem;
+  background-color: aqua;
+  font-size: 2rem;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+.nav-links a {
+  text-decoration: none;
+  color: black;
+}
+.nav-links li {
+  list-style: none;
+  justify-content: space-around;
+}
+
+.intro-section {
+  margin: 0 4.5rem;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+.wrapper {
+  display: inline-flex;
+}
+.description-section {
+  align-items: center;
+  margin-right: 5rem;
+  margin-top: 4rem;
+  padding-top: 2rem;
+  overflow: hidden;
+}
+.name {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 100;
+  font-size: 40px;
+  vertical-align: Top;
+}
+.name2 {
+  color: #260cbc;
+  font-family: Metropolis;
+  font-style: Extra Bold;
+  font-size: 60px;
+  vertical-align: Top;
+}
+.name3 {
+  font-family: Metropolis;
+  font-style: Semi Bold;
+  font-size: 48px;
+  vertical-align: Top;
+  position: relative;
+}
+.name3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #f6f9fe;
+  border-left: 2.5px solid red;
+  animation: typing 2s steps(17) infinite;
+}
+@keyframes typing {
+  100% {
+    left: 100%;
+    margin: 0 -35px 0 35px;
+  }
+}
+.dynamic-text {
+  height: 90px;
+  line-height: 90px;
+  overflow: hidden;
+}
+.dynamic-text li {
+  list-style: none;
+  position: relative;
+  top: 0;
+  animation: slide 6s steps(3) infinite;
+}
+.dynamic-text li span {
+  position: relative;
+}
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+.section-p {
+  margin-top: 1rem;
+  font-family: HK Grotesk;
+  font-style: (mixed);
+  font-size: 18px;
+  line-height: 29px;
+  line-height: 160%;
+  vertical-align: Top;
+}
+.introduction-b {
+  color: white;
+  font-size: 20px;
+  background-color: #f81743;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 54px;
+  width: 313px;
+  left: 120px;
+  top: 648px;
+  border-radius: 4px;
+  padding: 16px, 32px, 16px, 32px;
+  box-shadow: none;
+}
+.introduction-s {
+  font-family: HK Grotesk;
+  font-style: SemiBold;
+  font-size: 18px;
+  letter-spacing: 0.8%;
+  margin-right: 8rem;
+}
+.image-section {
+  background-image: url("../Assets/Rectangle\ 19.png");
+  padding: 0;
+  width: 100%;
+  height: 90%;
+}
+
+.white {
+  background-color: #ffffff;
+  padding-top: 3rem;
+}
+
+.work-section h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: Extra Light;
+  font-size: 48px;
+  vertical-align: Top;
+  font-weight: 100;
+  color: #260cbc;
+  background-color: #ffffff;
+}
+.work-section h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: Extra Bold;
+  font-size: 60px;
+  vertical-align: Top;
+  background-color: #ffffff;
+}
+.work-section p {
+  font-family: HK Grotesk;
+  font-style: Regular Legacy;
+  font-size: 18px;
+  padding-top: 1rem;
+  vertical-align: Top;
+  background-color: #ffffff;
+}
+.main-skills-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+  background-color: #ffffff;
+}
+
+.skills-container {
+  background-color: red;
+  margin: 2rem;
+  height: 15rem;
+  width: 35rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skills-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.skills-container img {
+  width: 10rem;
+  background-color: #ffffff;
+}
+.card figure {
+  background-color: #ffffff;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  margin: 0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .front {
+  background-color: #ffffff;
+}
+.card .back {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: left;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.projects-section {
+  margin: 6rem 4.5rem;
+  position: relative;
+}
+.projects-section h1 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: Extra Bold;
+  font-size: 45px;
+  vertical-align: Top;
+}
+.projects-section h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: Extra Light;
+  font-size: 38px;
+  vertical-align: Top;
+  font-weight: 100;
+  color: #260cbc;
+}
+.projects-container {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.carrousel-image {
+  margin: 0 1rem;
+  margin-right: 2rem;
+  height: 30rem;
+  transition: opacity 0.5s linear;
+}
+.hidden {
+  opacity: 0;
+}
+.carrousel-image img {
+  width: 90%;
+  margin-right: 2rem;
+  border-radius: 5px;
+  height: 80%;
+  transition: transform 0.5s ease-in;
+}
+
+.carrousel-description {
+  height: 30rem;
+}
+.carrousel-description h2 {
+  font-family: "HK Grotesk", sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.8%;
+  font-weight: bold;
+}
+.carrousel-description p {
+  margin: 2rem 0;
+  font-family: HK Grotesk;
+  font-style: Regular;
+  font-size: 18px;
+  vertical-align: Top;
+  letter-spacing: 0.8%;
+}
+.carrousel-description span {
+  background-color: #e1ebfb;
+  width: fit-content;
+  margin: 8px;
+  display: inline-block;
+  align-items: center;
+  justify-content: center;
+}
+.carrousel-text {
+  background-color: transparent;
+  margin: 0.1rem 1rem;
+  color: #666666;
+}
+.project-b {
+  display: inline-block;
+}
+.carrousel-description button {
+  color: #666666;
+  border: none;
+  box-shadow: none;
+  text-decoration: underline;
+  margin: 2rem 0.5rem;
+  font-size: 22px;
+  font-family: "HK Grotesk", sans-serif;
+  font-weight: 600;
+}
+.carrousel-description button:active {
+  box-shadow: none;
+  border-radius: none;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.carrousel-buttons {
+  display: inline-block;
+  border: none;
+  margin: 0;
+  width: auto;
+  position: absolute;
+  bottom: 3rem;
+  right: 2rem;
+}
+
+.carrousel-buttons button {
+  background-color: #260cbc;
+  margin: 0 1rem;
+  background: #260cbc;
+  box-shadow: 0px 8px 30px rgba(38, 12, 188, 0.36);
+  border-radius: 4px;
+}
+.carrousel-buttons img {
+  display: flex;
+  margin: 0.5rem 1rem;
+  align-items: center;
+  background-color: transparent;
+  width: 19px;
+}
+.black-container {
+  color: #e1ebfb;
+  margin: 4rem 0;
+  display: block;
+  background-color: #111416;
+  align-items: center;
+  position: relative;
+}
+.decoration-section {
+  margin: 4rem 4.5rem;
+  padding-top: 5rem;
+  justify-content: center;
+  text-align: center;
+  margin: 4rem 4.5rem;
+  display: block;
+  background-color: #111416;
+}
+.decoration-section h2 {
+  color: #6799e0;
+  z-index: 1;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #111416;
+  font-size: 30px;
+  font-weight: 50;
+}
+.decoration-section h1 {
+  z-index: 1;
+  margin-top: 2rem;
+  color: #f6f9fe;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #111416;
+  font-size: 50px;
+}
+.decoration-section p {
+  margin-top: 2rem;
+  color: #6799e0;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #111416;
+  font-size: 20px;
+}
+
+.decoration-section button {
+  font-size: 20px;
+  color: #ffffff;
+  font-family: "HK Grotesk", sans-serif;
+  background-color: #f81743;
+  letter-spacing: 0.8%;
+  margin: 4rem;
+  padding: 1.5rem;
+  border: none;
+  z-index: 2;
+  border-radius: 10px;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 12rem 4.5rem;
+}
+.copyright {
+  text-align: left;
+  padding-left: 2rem;
+}
+.contact {
+  text-align: left;
+  padding-left: 2rem;
+  padding-top: 2rem;
+}
+.copyright h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 4rem;
+}
+.copyright h3 {
+  font-weight: 400;
+}
+.contact h1 {
+  margin-bottom: 2rem;
+}
+.contact h2 {
+  margin: 1rem 0;
+  color: #3a3a3a;
+}
+.contact h3 {
+  color: #3a3a3a;
+  margin: 1rem 0;
+}
+.contact a {
+  color: #3a3a3a;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 2rem 0;
+}
+.icons {
+  display: inline-block;
+  justify-content: space-between;
+}
+.icons img {
+  width: 2rem;
+  margin: 0 1rem;
+}
+
+.burguer {
+  display: none;
+}
+.burguer div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(0, 0, 0);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  .name2 {
+    font-size: 40px;
+  }
+  .name3 {
+    font-size: 33px;
+  }
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 92vh;
+    top: 8vh;
+    background-color: lightcoral;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+  }
+  .nav-links li {
+    background-color: lightcoral;
+  }
+  .nav-links a {
+    background-color: lightcoral;
+  }
+  .burguer {
+    display: block;
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    margin: 0;
+  }
+  .intro-section {
+    margin: 4rem 0.5rem;
+    height: 100vh;
+    display: block;
+    text-align: center;
+  }
+  .image-section {
+    display: none;
+  }
+  .main-skills-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    background-color: #ffffff;
+  }
+  .description-section {
+    text-align: center;
+    margin: 0.5rem;
+  }
+
+  .skills-container {
+    background-color: #ffffff;
+    margin: 0;
+    height: 15rem;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .work-section {
+    margin: 4rem 1.5rem;
+    display: block;
+    background-color: #ffffff;
+  }
+  .card {
+    width: 90%;
+    height: 80%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .skills-container img {
+    width: 8rem;
+    background-color: #ffffff;
+  }
+  .card figure {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: 0;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card .front {
+    background-color: #ffffff;
+  }
+  .card .back {
+    display: block;
+    transform: rotateY(180deg);
+  }
+  .wave1 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+    width: 30%;
+  }
+  .wave2 {
+    background-color: transparent;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 0;
+    width: 50%;
+  }
+  .wave3 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 0;
+    width: 40%;
+  }
+  .projects-container {
+    margin-top: 4rem;
+    display: block;
+  }
+  .projects-section {
+    margin: 6rem 1rem;
+    position: relative;
+  }
+  .decoration-section {
+    margin: 4rem 1.5rem;
+  }
+  footer {
+    display: block;
+    grid-template-columns: 50% 50%;
+    margin: 4rem 2rem;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  body {
+    margin: 0;
+  }
+  .description-section {
+    text-align: center;
+  }
+  .intro-section {
+    margin: 0 1rem;
+    height: 100vh;
+    display: block;
+    text-align: center;
+  }
+  .main-skills-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    background-color: #ffffff;
+  }
+
+  .skills-container {
+    background-color: #ffffff;
+    margin: 0;
+    height: 15rem;
+    width: 15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .work-section {
+    margin: 4rem 0.5rem;
+    display: block;
+    background-color: #ffffff;
+  }
+  .card {
+    width: 80%;
+    height: 80%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .wave1 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    left: 0rem;
+  }
+  .wave2 {
+    background-color: transparent;
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+    z-index: 0;
+  }
+  .wave3 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    right: 0rem;
+    z-index: 0;
+  }
+  .projects-section {
+    margin: 6rem 1rem;
+    position: relative;
+  }
+  .decoration-section {
+    margin: 4rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  body {
+    margin: 0;
+    background: transparent;
+  }
+  .intro-section {
+    margin: 0 4.5rem;
+    height: 100vh;
+    display: grid;
+    text-align: left;
+  }
+  .description-section {
+    text-align: left;
+  }
+  .image-section {
+    display: block;
+  }
+  .main-skills-container {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem;
+    background-color: #ffffff;
+  }
+
+  .skills-container {
+    background-color: #ffffff;
+    margin: 2rem;
+    height: 15rem;
+    width: 15rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .work-section {
+    margin: 4rem 4.5rem;
+    display: block;
+    background-color: #ffffff;
+  }
+  .card {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+  }
+  .wave1 {
+    background-color: transparent;
+    position: absolute;
+    width: 25%;
+    bottom: 0rem;
+    left: 0rem;
+  }
+  .wave2 {
+    background-color: transparent;
+    position: absolute;
+    top: 0rem;
+    width: 35%;
+    right: 0rem;
+    z-index: 0;
+  }
+  .wave3 {
+    background-color: transparent;
+    position: absolute;
+    bottom: 0rem;
+    width: 25%;
+    right: 0rem;
+    z-index: 0;
+  }
+  .projects-container {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+  .projects-section {
+    margin: 6rem 4.5rem;
+    position: relative;
+  }
+  .decoration-section {
+    margin: 4rem 4.5rem;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin: 12rem 4.5rem;
+  }
+}
