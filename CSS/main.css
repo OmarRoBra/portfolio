@@ -27,14 +27,17 @@ nav {
   display: flex;
   justify-content: space-around;
   width: 30%;
+  overflow-x: hidden;
 }
 .nav-links a {
   text-decoration: none;
   color: black;
+  overflow-x: hidden;
 }
 .nav-links li {
   list-style: none;
   justify-content: space-around;
+  overflow-x: hidden;
 }
 
 .intro-section {
@@ -466,11 +469,13 @@ footer {
 @media screen and (max-width: 1024px) {
   .nav-links {
     width: 60%;
+    overflow-x: hidden;
   }
 }
 @media screen and (max-width: 768px) {
+  * {
+  }
   body {
-    overflow-x: hidden;
   }
   .name2 {
     font-size: 40px;
@@ -478,13 +483,18 @@ footer {
   .name3 {
     font-size: 33px;
   }
+  nav {
+    overflow-x: hidden;
+  }
   .nav-links {
+    overflow: none;
+    display: hidden;
+    overflow-x: hidden;
     position: absolute;
     right: 0px;
     height: 92vh;
     top: 8vh;
     background-color: lightcoral;
-    display: flex;
     flex-direction: column;
     align-items: center;
     width: 50%;
@@ -503,6 +513,8 @@ footer {
 }
 .nav-active {
   transform: translateX(0%);
+  overflow-x: visible;
+  display: flex;
 }
 
 @keyframes navLinkFade {
